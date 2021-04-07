@@ -2,7 +2,7 @@
 
 Idea from [here](https://github.com/florinpop17/app-ideas)
 
-Demo, run with: ```go run bin2dec.go```
+Demo, run with: ```go run .```
 
 **Tier:** 1-Beginner
 
