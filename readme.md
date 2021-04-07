@@ -2,6 +2,8 @@
 
 Idea from [here](https://github.com/florinpop17/app-ideas)
 
+Demo, run with: ```go run bin2dec.go```
+
 **Tier:** 1-Beginner
 
 Binary is the number system all digital computers are based on.
