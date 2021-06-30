@@ -18,7 +18,7 @@ func main() {
 		fmt.Println("exit: Close the program")
 		fmt.Print(">> ")
 		option, _ := reader.ReadString('\n')
-		option = strings.Replace(option, "\n", "", -1)
+		option = strings.ReplaceAll(option, "\n", "")
 		if option == "exit" {
 			break
 		}
@@ -27,7 +27,7 @@ func main() {
 			fmt.Println("Input binary digits (0/1) up to 8 digits:")
 			fmt.Print(">> ")
 			input, _ := reader.ReadString('\n')
-			input = strings.Replace(input, "\n", "", -1)
+			input = strings.ReplaceAll(input, "\n", "")
 			valid := binaryFormatChecker.Check(input)
 			if !valid {
 				fmt.Println("Invalid input! Please enter binary digits (0/1) up to 8 digits")
@@ -38,7 +38,7 @@ func main() {
 			fmt.Println("Input decimal number")
 			fmt.Print(">> ")
 			input, _ := reader.ReadString('\n')
-			input = strings.Replace(input, "\n", "", -1)
+			input = strings.ReplaceAll(input, "\n", "")
 			dec, err := strconv.ParseInt(input, 10, 0)
 			if err != nil {
 				fmt.Println("Invalid input! Please enter decimal number")
